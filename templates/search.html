@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="/bootstrap/css/style.css">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
+        <title>Kopi Katto</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <p class="navbar-brand wf-mplus1p" href="#">コッピーキャット</p>
+        </nav>
+        <div class="container">
+            <div class="col">
+                <img class="img-fluid mx-auto d-block justify-content-center" src="../bootstrap/images/manekineko.png">
+                <form class="form-inline justify-content-center" action="/search">
+                    <input type="text" class="search" placeholder="Enter a phrase" aria-label="Enter a phrase" name="q">
+                    <button class="btn btn-warning" type="submit">Let's Go!</button>
+                </form>
+            </div>
+            <p class="justify-content-center row col">{{results}}</p>
+        </div>
+    </body>
+</html>
